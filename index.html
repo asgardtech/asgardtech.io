@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asgard Tech-IO | Software & Crafts</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <style>
+    :root {
+      --primary-color: #1a1a1a;
+      --accent-color: #9b7e4b;
+      --text-color: #333;
+      --light-bg: #f5f5f5;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: var(--text-color);
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/hero-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 180px 20px;
+      text-align: center;
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero h1 {
+      font-size: 4.5rem;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .hero p {
+      font-size: 1.4rem;
+      max-width: 600px;
+      margin: 0 auto;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .service-card {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::after {
+      content: '🔨';
+      position: absolute;
+      bottom: -5px;
+      right: -5px;
+      font-size: 2em;
+      opacity: 0.5;
+      transform: rotate(-15deg);
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card h3 {
+      color: var(--accent-color);
+      margin-bottom: 15px;
+    }
+
+    .contact-info {
+      background: var(--light-bg);
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .contact-info h2 {
+      color: var(--accent-color);
+      margin-bottom: 30px;
+    }
+
+    footer {
+      background: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .norse-border {
+      border: 2px solid var(--accent-color);
+      position: relative;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 5px;
+      background: linear-gradient(to right, transparent, rgba(155, 126, 75, 0.1), transparent);
+    }
+
+    .norse-border::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(to right, transparent, var(--accent-color), transparent);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="hero">
+    <h1>Asgard Tech-IO</h1>
+    <p>Where Technology Meets Artistry</p>
+  </div>
+
+  <div class="container">
+    <div class="services">
+      <div class="service-card">
+        <h3>Software Consulting</h3>
+        <p>Professional software development and consulting services tailored to your needs. We bring your digital
+          visions to life with modern solutions and expert guidance.</p>
+      </div>
+      <div class="service-card">
+        <h3>Resin Art Crafts</h3>
+        <p>Unique handcrafted pieces combining resin with natural flowers. Each piece tells a story, preserving nature's
+          beauty in timeless creations.</p>
+        <p style="margin-top: 15px;"><a href="https://selendis.ro" target="_blank"
+            style="color: var(--accent-color); text-decoration: none; font-weight: 500;">Visit Selendis to explore our
+            creations →</a></p>
+      </div>
+      <div class="service-card">
+        <h3>Software Services</h3>
+        <p>Comprehensive online software services including development, maintenance, and digital transformation
+          solutions.</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="contact-info">
+    <div class="container">
+      <h2>Contact Information</h2>
+      <div class="norse-border">
+        <p><strong>Company Name:</strong> Asgard Tech-IO</p>
+        <p><strong>Address:</strong> Varful cu Dor street nr. 42, Arad, Arad, Romania, 310085</p>
+        <p><strong>Contact Number:</strong> 0766793654</p>
+        <p><strong>Email:</strong> sales@asgardtech.io</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Asgard Tech-IO. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
